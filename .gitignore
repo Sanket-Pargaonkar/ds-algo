@@ -4,3 +4,4 @@
 #.*
 *.class
 ds/linkedlist/target/*
+ds/linkedlist/#*#
