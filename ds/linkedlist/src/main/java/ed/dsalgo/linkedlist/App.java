@@ -8,6 +8,7 @@ public class App{
 	try{
 	    SimpleLinkedList sll = new SimpleLinkedList();
 	    sll.add(1);
+	    sll.addLast(20);
 	    sll.add(2);
 	    sll.add(3);
 	    sll.add(17,0);

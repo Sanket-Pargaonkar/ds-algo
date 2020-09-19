@@ -139,12 +139,16 @@ public class SimpleLinkedList{
     
     //add lst
     public void addLast(int val){
-	Node postTail = new Node(val, null);
-	tail.next = postTail;
-	System.out.println("a"+tail.value);
-	System.out.println("a1"+postTail.value);
-	tail = postTail;
-	System.out.println("b"+tail.value);
+	Node _new = new Node(val, null);
+	if(head == null){
+	    head = _new;
+	}
+	else if(head == tail){
+	    head.next = _new;
+	}
+	else 
+	    tail.next = _new;
+	tail = _new;
     }
     
     ///remove nodes
