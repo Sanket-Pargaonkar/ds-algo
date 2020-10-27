@@ -2,6 +2,10 @@
 #*#
 #*
 #.*
+.#*
 *.class
 ds/linkedlist/target/*
 ds/linkedlist/#*#
+ds/linkedlist/.#*
+./ds/linkedlist/src/main/java/ed/dsalgo/linkedlist/impl/#*#
+ds/linkedlist/src/main/java/ed/dsalgo/linkedlist/impl/.#*#
