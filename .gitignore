@@ -9,3 +9,11 @@ ds/linkedlist/#*#
 ds/linkedlist/.#*
 ./ds/linkedlist/src/main/java/ed/dsalgo/linkedlist/impl/#*#
 ds/linkedlist/src/main/java/ed/dsalgo/linkedlist/impl/.#*#
+
+
+
+ds/stacks/target/*
+ds/stacks/#*#
+ds/stacks/.#*
+./ds/stacks/src/main/java/ed/dsalgo/stacks/#*#
+ds/stacks/src/main/java/ed/dsalgo/stacks/.#*#
