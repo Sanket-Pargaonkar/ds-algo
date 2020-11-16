@@ -17,3 +17,10 @@ ds/stacks/#*#
 ds/stacks/.#*
 ./ds/stacks/src/main/java/ed/dsalgo/stacks/#*#
 ds/stacks/src/main/java/ed/dsalgo/stacks/.#*#
+
+
+ds/CustomExceptions/target/*
+ds/CustomExceptions/#*#
+ds/CustomExceptions/.#*
+./ds/CustomExceptions/src/main/java/ed/CustomExceptions/#*#
+ds/CustomExceptions/src/main/java/ed/CustomExceptions/.#*#
