@@ -1,4 +1,6 @@
 package ed.dsalgo.stacks;
+import ed.CustomExceptions.MyStackEmptyException;
+import java.util.ArrayList;
 /**
  * @author Sanket Pargaonkar
  * @version 1.0
@@ -11,13 +13,13 @@ package ed.dsalgo.stacks;
  */
 public class MyStack{
     private int top;
-    private len;
-    private final ArrayList<int> store;
+    private int len;
+    private final ArrayList<Integer> store;
 
     public MyStack(){
 	this.top = 0;
 	this.len = 0;
-	store = new ArrayList<int>();
+	this.store = new ArrayList<Integer>();
     }
 
     public int getLength(){
@@ -30,8 +32,9 @@ public class MyStack{
     }
     //pop top
     public int pop() throws MyStackEmptyException{
-	if(top == 0)throw MyStackEmptyException();
-
+	if(top == 0)throw new MyStackEmptyException();
+	else
+	return len;
     }
     
     
