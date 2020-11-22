@@ -19,6 +19,15 @@ ds/stacks/.#*
 ds/stacks/src/main/java/ed/dsalgo/stacks/.#*#
 
 
+
+ds/randomQuestions/target/*
+ds/randomQuestions/#*#
+ds/randomQuestions/.#*
+./ds/randomQuestions/src/main/java/ed/randomQuestions/#*#
+ds/randomQuestions/src/main/java/ed/randomQuestions/.#*#
+ds/randomQuestions/src/main/java/ed/randomQuestions/*~
+
+
 ds/CustomExceptions/target/*
 ds/CustomExceptions/#*#
 ds/CustomExceptions/.#*
