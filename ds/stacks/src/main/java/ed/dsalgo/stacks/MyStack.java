@@ -1,6 +1,7 @@
 package ed.dsalgo.stacks;
 import ed.CustomExceptions.MyStackEmptyException;
 import java.util.ArrayList;
+import static java.lang.System.out;
 /**
  * @author Sanket Pargaonkar
  * @version 1.0
@@ -33,12 +34,19 @@ public class MyStack{
     //pop top
     public int pop() throws MyStackEmptyException{
 	if(top == 0)throw new MyStackEmptyException();
-	else
-	return len;
+	int result = store.get(len-1);
+	store.remove(len-1);
+	len--;
+	return result;
     }
-    
-    
-    
+    //Contains
+    public boolean contains(int i){
+	return store.contains(i);
+    }
+    //print
+    public void printMyStack(){
+	for(int i : store)out.println(i);
+    }
 }
 
 
