@@ -15,6 +15,7 @@ ds/linkedlist/src/main/java/ed/dsalgo/linkedlist/impl/.#*#
 ds/stacks/target/*
 ds/stacks/#*#
 ds/stacks/.#*
+ds/stacks/dependency-reduced-pom.xml
 ./ds/stacks/src/main/java/ed/dsalgo/stacks/#*#
 ds/stacks/src/main/java/ed/dsalgo/stacks/.#*#
 

@@ -17,12 +17,40 @@
 	  <archive>
 	    <manifest>
 	      <mainClass>ed.dsalgo.stacks.StackDemo</mainClass>
-	      <!-- <addClasspath>true</addClasspath> -->
-	      <!-- <classpathPrefix>libs/</classpathPrefix> -->
 	    </manifest>
 	  </archive>
 	</configuration>
        </plugin>
+       	<plugin>
+	  <groupId>org.apache.maven.plugins</groupId>
+	  <artifactId>maven-shade-plugin</artifactId>
+	  <version>3.2.4</version>
+
+	  <executions>
+	    <execution>
+	      <phase>package</phase>
+	      <goals>
+	  	<goal>shade</goal>
+	      </goals>
+	      <!-- <configuration> -->
+	      <!-- 	<!-\- <artifactSet> -\-> -->
+	      <!-- 	<!-\-   <!-\\- <artifact>ed.CustomExceptions:CustomExceptions:*:*</artifact> -\\-> -\-> -->
+	      <!-- 	<!-\-   <includes> -\-> -->
+	      <!-- 	<!-\-     <include>ed/CustomExceptions/**</include> -\-> -->
+	      <!-- 	<!-\-   </includes> -\-> -->
+	      <!-- 	<!-\- </artifactSet> -\-> -->
+	      <!-- 	<filters> -->
+	      <!-- 	  <filter> -->
+	      <!-- 	    <artifact>ed.CustomExceptions:CustomExceptions:*:*</artifact> -->
+	      <!-- 	    <includes> -->
+	      <!-- 	      <include>**</include> -->
+	      <!-- 	    </includes> -->
+	      <!-- 	  </filter> -->
+	      <!-- 	</filters> -->
+	      <!-- </configuration> -->
+	    </execution>
+	  </executions>
+	</plugin>
        <!-- <plugin> -->
        <!-- 	 <artifactId>maven-dependency-plugin</artifactId> -->
        <!-- 	 <executions> -->
@@ -44,12 +72,15 @@
        </plugin>
      </plugins>
   </build>
-  <!-- <repositories> -->
-  <!--   <repository> -->
-  <!--     <id>libs</id> -->
-  <!--     <url>file:${project.basedir}/src/libs</url> -->
-  <!--   </repository>  -->
-  <!-- </repositories> -->
+  <!-- Declaring the jar in the libs folder as a repository source.
+       This will later be built into the packaged jar by maven-shade-plguin. This is as good as installing the jar in local maven repository, except this done explicityly here. Doing it explicitly makes a note that this poject depends on the custom exceptions jar and will hep while building this project -->
+       
+  <repositories>
+    <repository>
+      <id>libs</id>
+      <url>file:${project.basedir}/src/libs</url>
+    </repository>
+  </repositories>
   <dependencies>
         <!-- junit 5, unit test -->
         <dependency>
@@ -62,8 +93,8 @@
 	    <groupId>ed.CustomExceptions</groupId>
             <artifactId>CustomExceptions</artifactId>
             <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/src/libs/CustomExceptions-1.0.jar</systemPath>
+            <!-- <scope>system</scope> -->
+            <!-- <systemPath>${project.basedir}/src/libs/CustomExceptions-1.0.jar</systemPath> -->
         </dependency>
   </dependencies>
   <properties>
