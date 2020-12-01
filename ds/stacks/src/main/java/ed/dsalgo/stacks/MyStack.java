@@ -29,6 +29,7 @@ public class MyStack{
     //insert
     public void push(int ele){
 	store.add(ele);
+	len++;
 	top++;
     }
     //pop top
@@ -36,6 +37,7 @@ public class MyStack{
 	if(top == 0)throw new MyStackEmptyException();
 	int result = store.get(len-1);
 	store.remove(len-1);
+	top--;
 	len--;
 	return result;
     }
