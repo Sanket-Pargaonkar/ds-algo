@@ -12,42 +12,42 @@ import static java.lang.System.out;
  * 3. push elements to the top
  * 4. clear the stack
  */
-public class MyStack{
+public class MyStack<T>{
     private int top;
     private int len;
-    private final ArrayList<Integer> store;
+    private final ArrayList<T> store;
 
-    public MyStack(){
+    public MyStack( ){
 	this.top = 0;
 	this.len = 0;
-	this.store = new ArrayList<Integer>();
+	this.store = new ArrayList<T>();
     }
 
     public int getLength(){
 	return len;
     }
     //insert
-    public void push(int ele){
+    public void push(T ele){
 	store.add(ele);
 	len++;
 	top++;
     }
     //pop top
-    public int pop() throws MyStackEmptyException{
+    public T pop() throws MyStackEmptyException{ 
 	if(top == 0)throw new MyStackEmptyException();
-	int result = store.get(len-1);
+	T result = store.get(len-1);
 	store.remove(len-1);
 	top--;
 	len--;
 	return result;
     }
     //Contains
-    public boolean contains(int i){
+    public boolean contains(T i){
 	return store.contains(i);
     }
     //print
     public void printMyStack(){
-	for(int i : store)out.println(i);
+	for(T i : store)out.println(i);
     }
 }
 

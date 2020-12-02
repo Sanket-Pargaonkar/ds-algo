@@ -12,7 +12,7 @@ import java.lang.Exception;
 public class TestMyStack{
     @Test
     public void ConstructorTest(){
-	MyStack stack = null;
+	MyStack<String> stack = null;
 	try{
 	    stack = new MyStack();
 	}catch(Exception e){
@@ -22,11 +22,11 @@ public class TestMyStack{
     }
 
     @ParameterizedTest
-    @ValueSource(ints = {1,2,3,2,3,2,2,3})    
-    public void StackInputTest(int input){
-	MyStack stack = null;
+    @ValueSource(strings = {"1","2"})//,3,2,3,2,2,3})    
+    public void StackInputTest(String input){
+	MyStack<String> stack = null;
 	try{
-	    stack = new MyStack();
+	    stack = new MyStack<String>();
 	    stack.push(input);
 	    assertEquals(stack.getLength(), 1);
 	}catch(Exception e){
@@ -36,10 +36,10 @@ public class TestMyStack{
 
     @Test
     public void StackPopTest(){
-	MyStack stack = null;
+	MyStack<String> stack = null;
 	try{
-	    stack = new MyStack();
-	    stack.push(1);
+	    stack = new MyStack<String>();
+	    stack.push("1");
 	    assertEquals(stack.getLength(), 1);
 	    stack.pop();
 	    assertEquals(stack.getLength(), 0);
