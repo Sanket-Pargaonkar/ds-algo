@@ -5,6 +5,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import org.junit.jupiter.api.Test;
 
 public class TestParanthesisMatcher{
@@ -21,25 +23,33 @@ public class TestParanthesisMatcher{
     }
 
     @Test
-    public void TestPramertizedConstructor(){
+    public void TestPramertizedConstructor1(){
+	assertAll(() -> new ParanthesisMatcher("[{()}]"));
+    }
+    
+    @Test
+    public void TestPramertizedConstructor2(){
 	assertThrows(IllegalArgumentException.class, () -> new ParanthesisMatcher("asdfa"));
 	assertThrows(IllegalArgumentException.class, () -> new ParanthesisMatcher("asdfa"), "The input string contains characters other than \"){}[]\"");
     }
 
     @Test
-    public void TestPramertizedConstructorThrows(){
-
-	assertThrows(IllegalArgumentException.class, () -> new ParanthesisMatcher("asdfa"));
-	assertThrows(IllegalArgumentException.class, () -> new ParanthesisMatcher("asdfa"), "The input string contains characters other than \"){}[]\"");
-
+    public void TestPramertizedConstructorThrows1(){
+	assertThrows(IllegalArgumentException.class, () -> new ParanthesisMatcher("[]][())"));
+	assertThrows(IllegalArgumentException.class, () -> new ParanthesisMatcher("asdfa"), "The input string does not have even number of characters");
     }
 
     @Test
-    public void TestIsMatch(){
+    public void TestIsMatch1(){
 	ParanthesisMatcher pm = new ParanthesisMatcher("[({})]");
 	assertTrue(pm.isMatch());
     }
-    
+
+    @Test
+    public void TestIsMatch2(){
+	ParanthesisMatcher pm = new ParanthesisMatcher("[{(})]");
+	assertFalse(pm.isMatch());
+    }
 
     private void printExceptionInfo(Exception ex){
 	try{
