@@ -46,7 +46,7 @@ public class MyStack<T>{
 	return store.contains(i);
     }
     //print
-    public void printMyStack(){
+    public void print(){
 	for(T i : store)out.println(i);
     }
 }

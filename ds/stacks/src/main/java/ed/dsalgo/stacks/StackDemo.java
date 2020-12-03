@@ -17,9 +17,9 @@ public class StackDemo{
 	    stack.push(2);	
 	    stack.push(3);
 	    stack.push(5);
-	    stack.printMyStack();
+	    stack.print();
 	    stack.pop();
-	    stack.printMyStack();
+	    stack.print();
 	}catch(MyStackEmptyException e){
 	    out.println(e.getMessage());
 	}catch(Exception e){
