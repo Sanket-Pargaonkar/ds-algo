@@ -32,11 +32,11 @@ public class PatternMatcher132{
 	    boolean secondStep = false;	    
 	    for(int j : input){
 		if(!secondStep && ele < j){
-		    result[2] = j;
+		    result[1] = j;
 		    secondStep = true;
 		    continue;
-		}else if(secondStep &&  (result[0]<j && j> result[2])){
-		    result[1] = j;
+		}else if(secondStep &&  (j<result[1])){
+		    result[2] = j;
 		    patternFound = true;
 		    break;
 		}
