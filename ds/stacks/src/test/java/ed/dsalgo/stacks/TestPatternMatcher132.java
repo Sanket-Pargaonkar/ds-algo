@@ -31,8 +31,9 @@ public class TestPatternMatcher132{
     public void testGet132Pattern1_1(){
 	final int[] input1 = {2,3,5,4,6,5,67,454,54,6};
 	this.pm132 = new PatternMatcher132(input1);
-	int[] result = pm132.Get132Pattern1();
+	int[] result = pm132.get132Pattern1();
 	assertNotNull(result);
+	out.println("Result For get132Pattern1():");	
 	for(int i : result)out.println(i);
     }
 
@@ -40,9 +41,27 @@ public class TestPatternMatcher132{
     public void testGet132Pattern1_2(){
 	final int[] input2 = {2,3,4,5,6,16};
 	this.pm132 = new PatternMatcher132(input2);
-        int[] result = pm132.Get132Pattern1();
+        int[] result = pm132.get132Pattern1();
 	assertNull(result);;
 
+    }
+
+    @Test
+    public void testGet132Pattern2_1(){
+	final int[] input1 = {2,3,5,4,6,5,67,454,54,6};
+	this.pm132 = new PatternMatcher132(input1);
+	int[] result = pm132.get132Pattern2();
+	assertNotNull(result);
+	out.println("Result For get132Pattern2():");
+	for(int i : result)out.println(i);
+    }
+
+    @Test
+    public void testGet132Pattern2_2(){
+	final int[] input2 = {2,3,4,5,6,16};
+	this.pm132 = new PatternMatcher132(input2);
+        int[] result = pm132.get132Pattern2();
+	assertNull(result);;
     }
     
 }
