@@ -11,6 +11,7 @@ ds/linkedlist/.#*
 ds/linkedlist/src/main/java/ed/dsalgo/linkedlist/impl/.#*#
 
 
+**/target/*
 
 ds/stacks/target/*
 ds/stacks/#*#
@@ -34,3 +35,9 @@ ds/CustomExceptions/#*#
 ds/CustomExceptions/.#*
 ./ds/CustomExceptions/src/main/java/ed/CustomExceptions/#*#
 ds/CustomExceptions/src/main/java/ed/CustomExceptions/.#*#
+
+
+**/#*#
+**/.#*#
+**/*~
+**/.*
