@@ -5,3 +5,9 @@ public class MyStackEmptyException extends Exception{
 	super("MyStock is Empty. Cannot pop elements.");
     }
 }
+
+class WrongInsertPositionException extends Exception{
+    public WrongInsertPositionException(int position,int arraySize){
+	super("Incorrect insert position: "+position+".- Size of the array is "+ arraySize);
+    }
+}
