@@ -13,4 +13,177 @@
   5. Write program to calculate the sum of all the digits of a given number using recursion
   6. Write program to reverse the digits of a given number using recursion
 
-* 
+* Arrays
+  1. Dynamic Arrays Programs: traverse, insert, delete, search, sort
+  2. 2d array:: traverse, insert, delete, search, sort
+  3. 3d array:: traverse, insert, delete, search, sort
+  4. Missing number:
+     Given unsorted array of size N, its filled with numbers from 1 to N+1 without repetition, find the no which
+     is missing
+
+     Example
+     Input: (4,2,1,3,6]
+     Output: 5
+  5. Largest Element Towards Left & Right - Problem Statement:
+     Find the largest element towards left and right of each element in an unsorted array. If there are no
+     element larger than current element, fill it with -1
+
+     Example
+     Input: (4,2,1,3,6,4]
+
+     Output:
+     Largest element on left [-1,4,4,4,-1,6]
+     Largest element on right [6,6,6,6,-1,-1]
+  6. Reverse an array
+  7. Shift Array By K-Places -
+     Shift an array by K places towards left
+
+     Example
+     Input: [1,2,3,4,5,6,7] k=2
+     Output: [3,4,5,6,7,1,2]
+  8. Stock Price Problem
+     Given prices of stocks priceli] on i th day, could you compute the max profit that could be computed by doing only 1 transaction.
+
+     Example
+     Input: prices] ={7, 1,5, 3,6, 4]
+     Output: 5
+  9. Water Trapping -
+     Given n non-negative integers representing height of the building, compute how much water it is able to
+     trap after raining.
+
+       Input: arr[] = {3,0, 2,0, 4}
+       Output: 7
+  10. Equilibrium index
+      Equilibrium index of an array is an index such that the sum of elements at lower indexes is equal to the
+      sum of elements at higher indexes.
+
+      Example
+      Input: nums = [1,1,1]
+      Output: 2
+  11. Set Matrix Zero -
+      Given an array of intervals where intervals[i] = [starti, endil, merge all overlapping intervals, and return an
+
+      array of the non-overlapping intervals that cover all the intervals in the input.
+
+      Example
+      Input: intervals = [[1,3],[2,61,[8,101,[15,18]]
+      Output: [[1,6],(8,10],[15,18]]
+  12. Rotate Image 
+      You are given an n x n 2D matrix representing an image, rotate the image by 90 degrees (clockwise).
+
+      Example
+      Input: matrix = ([1,2,3,14,5,61,(7,8,91]
+      Output: [[7,4,1],[8,5,21,9,6,31]
+  13. Extra- Queries on a matrix 
+      Given a matrix M of size mx n ( 1 <=m,n <= 1000 ). Its initially filled with integers from 1 to mx n
+      sequentially in a row major order. The task is to process a list of queries manipulating M such that every
+      query is one of the following three.
+
+      R(x, y): swaps the x-th and y-th rows of M where x and y vary from 1 to m.
+
+      C(x, y): swaps the x-th and y-th columns of M where x and y vary from 1 to n.
+
+      P(x, y): prints the element at x-th row and y-th column where x varies from 1 to m and y varies from 1 to n.
+
+      Input:m=4,n=4
+      Queries: R(1, 3)
+      P(1,1)
+      Output: 9 ns
+
+
+
+
+* Linked List
+  
+** Notes
+   - slow and fast pointer
+** 
+
+* Searching and sorting
+** Searching
+   1. Implement linear search on an arraay in java
+   2. Implement binary search on an arraay in java
+** sorting
+*** Insertion sort
+    1. Implement insertion sort for numerical array input
+    2. Implement all the sorting algorithms on linked list
+*** Other Problems
+    1. Write a program to calculate the minimum number of swaps to sort the array
+    2. Write a program to Sort an array in wave form
+    3. Given an array of positive and negative numbers, arrange them in an alternate fashion such that
+       every positive number is followed by a negative and vice-versa maintaining the order of
+       appearance.
+
+       Examples
+       Input: 1,2,3,-4,-1,4
+       Output: -4,1,-1,2,3,4
+    4. Question 2: Median Sort
+       Given are some integers, which are read from the data stream. The task is to find the median of the
+       integers read so far.
+
+       The median is the middle value of a sorted list of integers. If the size of the list is even, the median is
+       the average of the two middle elements.
+
+       Example
+
+       Input: 1,2, 3,...
+
+       Output: 1,1.5,2...
+    5. Pairs with Min Diff
+       Given an array of distinct integers arr, find all pairs of elements with the minimum absolute difference of any two elements.
+       Return a list of pairs in ascending order(with respect to pairs), each pair [a, b] follows.
+       a,b are from arr
+       a<b
+       b- a equals to the minimum absolute difference of any two elements in arr
+       Example
+       Input; arr = [4.2,1,3]
+       Output: [[1,2],(2,3][34]]
+    6. Search in Rotated Sorted Array
+       There is an integer array nums sorted in ascending order (with distinct values).
+
+       Given the array nums after the possible rotation and an integer target, return the index of target if it is in
+       nums, or -1 if itis not in num.
+
+       Example
+
+       Input: nums = [4,5,6,7,0,1,2), target = 0
+
+       Output: 4
+    7. Find first and last Position of Element in Sorted Array
+
+       Given an array of integers sorted in non-decreasing order, find the starting and ending position of
+       a given target value.
+
+       If target is not found in the array, return [-1, -1].
+
+       Example
+
+       Input: nums =[5,7,7,8,8,10], target = 8
+
+       Output: [3,4]
+    8. Find first and last Position of Element in Sorted Array
+       Given an array of integers sorted in non-decreasing order, find the starting and ending position of
+       a given target value.
+
+       If target is not found in the array, return [-1, -1].
+
+       Example
+
+       Input: nums =[5,7,7,8,8,10], target = 8
+
+       Output: [3,4]
+    9. Kth Largest Element in an Array
+       Given an integer array input and an integer k, return the kth largest element in the array.
+       Example
+
+       Input: arr = [32,1,5,6,4] k = 2
+
+       Output: 5
+    10. 
+
+
+
+
+
+*** 
+
