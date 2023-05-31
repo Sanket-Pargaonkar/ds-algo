@@ -90,15 +90,10 @@
       P(1,1)
       Output: 9 ns
 
-
-
-
 * Linked List
-  
 ** Notes
    - slow and fast pointer
 ** 
-
 * Searching and sorting
 ** Searching
    1. Implement linear search on an arraay in java
@@ -180,10 +175,9 @@
 
        Output: 5
     10. 
-
-
-
-
-
-*** 
+* String
+** Notes
+** Problems
+   1. KMP algorithm
+      Implement string pattern search using KMP algorithm
 
