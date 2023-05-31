@@ -1,0 +1,16 @@
+# -*- mode:org -*-                                                                                                                                    
+* Recursion
+  1. Factorial
+     Calculate the factorial of a given number using recursion
+  2. GCD
+     Calculate the gcd of two given numbers using recursion
+  3. Fibonnaci sequence
+     1. Print the Fibonnaci sequence using recursion
+     2. Print nth number in the Fibonnaci sequence using recursion
+  4. Tower of Hanoi
+     1. Calculate the number of steps required for n ring tower
+     2. Print the sequence of steps for an n ring towerg
+  5. Write program to calculate the sum of all the digits of a given number using recursion
+  6. Write program to reverse the digits of a given number using recursion
+
+* 
