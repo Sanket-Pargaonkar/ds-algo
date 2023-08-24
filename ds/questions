@@ -180,4 +180,97 @@
 ** Problems
    1. KMP algorithm
       Implement string pattern search using KMP algorithm
+   2. Rabin Karp algorithm
+      Implement string pattern search using Rabin Karp algorithm
+   3. Longest Palindromic Substring
+      1. Implement using brute force approach
+      2. Implemt using optimised approach: moving mirror pointer approach
+   4. https://leetcode.com/problems/roman-to-integer/
+   5. Check wheather two strings are anagrams of each other.
+   6. Find the longest substring with k unique characters
+   7. Compare version numbers:
+      Given 2 revision, your task is to compare version numbers.
+      Version number consist of set separated by dots. The versions are moved from left to right.
+      If version1< version2, return -1 else return +1.
 
+      Example 1:
+
+      Input:
+
+      versionl = "1.00001", version2="1.001"
+      Output: 0
+
+      Example 2:
+
+      Input:
+      versionl = "1.0.0001", version2="1.1.001"
+      Output: -1
+
+   8. Count and say
+      Your task is to implement count and say.
+
+      For n=1, it should print "1". This is the base case.
+      For n=2, it should print "1:
+      For n=3, it should print "2:
+      For n=4, it should print "1211"
+
+
+   9. 
+* Sets
+  - For Hashset, LinkedHashset, TreeSwweet
+    1. implement basiic traverse, insert, delete, search, sort
+       - verify duplicate, null input value and ordering constraint
+  - Use cases: Solve the problems in the course
+  - Read the hashing article in the ticket and reaattempt th test
+** Hashset
+   1. implement basiic traverse, insert, delete, search, sort
+      - verify duplicate and ordering constraint
+
+* Stacks
+  - Implement infix to postfix/ prefix using java staCK CLASS
+* Trees
+  1. Implement a generic class that allows the user to choose the implementation backed by arrays or linked lists
+     - implement basic traverse, insert, delete, search, sort
+       - implement inorder, pre/post order traversal
+       - implement level by lebvel traversal
+	 - iteratively and recursivly
+       - implement boundry traversal
+     - implement methods to get
+       - max height given number of nodes
+       - max nodes given height
+     -   
+* Binary trees
+  1. Implement a generic class that allows the user to choose the implementation backed by arrays or linked lists
+     - implement basic traverse, insert, delete, search, sort for BST
+       - implement inorder, pre/post order traversal
+       - implement level by lebvel traversal
+	 - iteratively and recursivly
+       - implement boundry traversal
+       - implement the delete algorithm in bst
+	 - when the node to be deleted has a right and left subbtree
+	 - when it has only left or right tree
+     - implement methods to get
+       - max height given number of nodes
+       - max nodes given height
+     - 
+  2. Implement the range sum problrem
+     https://olympus.mygreatlearning.com/courses/94760/pages/range-sum?module_item_id=4296507
+  3. 
+     https://olympus.mygreatlearning.com/courses/94760/pages/sorted-array-to-bst?module_item_id=4296508
+  4. 
+     https://olympus.mygreatlearning.com/courses/94760/pages/morris-traversal?module_item_id=4296509
+  5.
+     https://olympus.mygreatlearning.com/courses/94760/pages/bst-kth-smallest-element?module_item_id=4296510
+  6. 
+
+** 
+* Heaps
+  1. implement heap backed by arrays
+     1. implement max and min heaps
+     2. implement the insertion and deleteion algorithms in min and max heaps
+     3. traverse, insert, delete, search, sort on both min and max heap
+     4. implement code to convert an array into min/max heap
+	1. use heap to sort a given array -> heapify it then delete each element one by one
+* Queues
+  1. Implement the flood fill algorithm using the Breadth First and Depth First approach.
+*  
