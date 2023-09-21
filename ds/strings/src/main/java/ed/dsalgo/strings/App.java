@@ -11,6 +11,7 @@ public class App {
     public static void main(String[] args) {
 	MainMenu.add("PatternMatching: KPM_PatterMatcher");
 	MainMenu.add("PatternMatching: RabinKarp_PatterMatcher");
+	MainMenu.add("Longest Palindromic Substring");
 	Scanner sc = new Scanner(System.in);
 	int count = 0;
 	System.out.println("Menu: ");
@@ -20,6 +21,7 @@ public class App {
 	}
 	System.out.println("Enter the your Choice: ");
 	int choice = sc.nextInt();
+	String inStr = null;
 	switch(choice){
 	case 1:
 	    out.println("Enter String :");
@@ -40,6 +42,15 @@ public class App {
 	    PatternMatching rkpm = new RabinKarp_PatternMatcher();
 	    out.println("Pattern Matching Result: "+rkpm.matchPattern(rkString, pattern));
 	    break;
+
+	case 3:
+	    out.println("Enter String :");
+	    inStr = sc.next();
+	    sc.nextLine();
+	    Solutions s = new Solutions();
+	    out.println("Longest Palindromic Substring: "+s.getLongestPalindromeStr(inStr));
+	    break;
+
 	default:
 	    out.println("Invalid Choice");
 	    break;

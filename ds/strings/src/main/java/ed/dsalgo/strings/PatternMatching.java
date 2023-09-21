@@ -55,7 +55,7 @@ class RabinKarp_PatternMatcher implements PatternMatching{
 	int wt = 0;
 	int strLen = str.length();
 	for(int i = strLen-1  ; i >= 0 ; i--){
-	    wt += getCharWt(str.charAt(strLen - 1 -i), i);
+	    wt += getCharWt(str.charAt(i), i);
 	}
 	return wt;
     }
