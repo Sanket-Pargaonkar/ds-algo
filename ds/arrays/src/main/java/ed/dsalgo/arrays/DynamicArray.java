@@ -1,5 +1,5 @@
 package ed.dsalgo.arrays;
-import ed.CustomExceptions.*
+import ed.CustomExceptions.WrongInsertPositionException;
 
 public class DynamicArray{
     private int size;
@@ -12,13 +12,13 @@ public class DynamicArray{
 
     //traverse 
     public void traverse(){
+	for(){}
 
     }
     //insert
-    public bool insert(int i, int pos){
-	if(pos >=capacity){
-	    throw new WrongInsertPositionException(int pos ,int capacity)
-	}
+    public boolean insert(int i, int pos){
+
+	return false;
     }
     //delete
     //sort

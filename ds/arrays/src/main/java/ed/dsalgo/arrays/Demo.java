@@ -5,7 +5,7 @@ import ed.dsalgo.arrays.*;
 
 public class Demo{
     public static void main(String[] args) {
-        DynamicArray da = new DynamicArray();
+        DynamicArray da = new DynamicArray(10);
 	
     }
 }
